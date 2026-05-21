@@ -1,666 +1,532 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WARRIORFIRM.ID</title>
-<link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/a/AVvXsEjOL9fdRr4PE4DPhFVuCqHU-eoGYKvA0T4ga3Weq47yo8PrmW5A69ZD5Zrz32o5TviFOBwOIULrFlN0sqroSzZr4OKWz4oHOzdAGWSfLkstpxlzoemVxmt0inBCgdLFNosRDgrxsgiixoJ54_JMJ6b95T5TNNc1yJ5tPDSAz3Bx_oSC6H-mr9YAAuo8skIz">
-<!-- FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/old-english-text-mt" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-<!-- ICON -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <title>warriorfirm.id</title>
 
-<style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+  <style>
 
-body{
-    overflow:hidden;
-    background:#000;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Montserrat',sans-serif;
+    }
 
-/* =========================
-   NAVBAR
-========================= */
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#0b0b0b;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,0.9);
+      backdrop-filter:blur(10px);
+      z-index:1000;
+      border-bottom:1px solid rgba(255,215,0,0.2);
+    }
+
+    .logo{
+      color:#FFD700;
+      font-size:28px;
+      font-weight:900;
+      letter-spacing:2px;
+    }
 .logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  color:#FFD700;
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:2px;
 }
 
 .logo img{
-    height:52px;
-    object-fit:contain;
-    transition:0.3s;
+  width:45px;
+  height:45px;
+  object-fit:contain;
 }
-
-.logo img:hover{
-    transform:scale(1.08);
-}
-
-.logo h1{
-    font-size:30px;
-    font-weight:400;
-    color:#111;
-    letter-spacing:1px;
-
-    font-family:'Old English Text MT', serif;
-}
-.logo span{
-    color:white;
-}
-
-.logo span{
-    color:#d4af37;
-}
-header{
-    position:fixed;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:85px;
-
-    background:#ffffff;
-
-    display:flex;
-    align-items:center;
-
-    padding:0 60px;
-
-    z-index:999;
-
-    box-shadow:0 3px 15px rgba(0,0,0,0.15);
-}
-
-/* LOGO */
-.logo img{
-    height:52px;
-    object-fit:contain;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-
-    width:100%;
-    height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.82),
-    rgba(0,0,0,0.82)),
-    url('https://blogger.googleusercontent.com/img/a/AVvXsEiNdEnBwlXuZEHfmABCku1LtcIJ2UCTeRK6obx7OhgjqO5QGEb1BWTuj8c7dojh20DNLvYV872_pMKcNwcyaNN9m4p_MrlAUWIGzKGhTGQMoMOr_dYKi-n3H7yP6D9h6qIKzLTzwJPBL3ARGVWlYoxJsyaagTzati_A8WkQ8I6Eg2QD6RkZ1-VvGXiW2FnP');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    position:relative;
-}
-
-/* BOX */
-
-.content-box{
-
-    position:relative;
-
-    width:950px;
-    max-width:90%;
-
-    padding:70px 50px;
-
-    border-radius:100px;
-
-    text-align:center;
-
-    background:rgba(0,0,0,0.35);
-
-    overflow:hidden;
-
-    backdrop-filter:blur(5px);
-
-    z-index:1;
-}
-.content-box::before{
-
-    content:'';
-
-    position:absolute;
-
-    inset:0;
-
-    padding:5px;
-
-    border-radius:100px;
-
-    background:linear-gradient(
-    270deg,
-    #8f6b12,
-    #d4af37,
-    #ffe08a,
-    #d4af37,
-    #8f6b12
-    );
-
-    background-size:400% 400%;
-
-    animation:goldMove 6s linear infinite;
-
-    -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-
-    -webkit-mask-composite:xor;
-    mask-composite:exclude;
-
-    z-index:-1;
-}
-@keyframes goldMove{
-
-    0%{
-        background-position:0% 50%;
+    .menu{
+      display:flex;
+      gap:25px;
     }
 
-    100%{
-        background-position:400% 50%;
+    .menu a{
+      text-decoration:none;
+      color:white;
+      font-weight:600;
+      transition:0.3s;
+      position:relative;
     }
 
-}
-/* TITLE */
-
-.content-box h1{
-
-    color:#d4af37;
-
-    font-size:clamp(30px, 8vw, 92px);
-
-    font-weight:600;
-
-    margin-bottom:35px;
-
-    letter-spacing:2px;
-
-    line-height:1.1;
-
-    word-break:break-word;
-}
-
-/* TEXT */
-
-.content-box p{
-
-    color:white;
-
-    font-size:28px;
-    line-height:1.7;
-
-    margin-bottom:50px;
-}
-
-/* BUTTONS */
-
-.button-group{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-.btn{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:12px;
-
-    min-width:220px;
-
-    padding:18px 35px;
-
-    border:3px solid white;
-    border-radius:50px;
-
-    color:white;
-    text-decoration:none;
-
-    font-size:21px;
-    font-weight:600;
-
-    transition:0.3s;
-}
-
-.btn i{
-    font-size:23px;
-}
-
-.btn:hover{
-
-    background:#d4af37;
-    border-color:#d4af37;
-
-    color:black;
-
-    transform:translateY(-4px);
-}
-
-/* SCROLL */
-
-.scroll{
-
-    position:absolute;
-
-    bottom:50px;
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:38px;
-    height:65px;
-
-    border:2px solid white;
-    border-radius:30px;
-
-    display:flex;
-    justify-content:center;
-
-    padding-top:10px;
-}
-
-.scroll::before{
-
-    content:'';
-
-    width:7px;
-    height:15px;
-
-    background:white;
-
-    border-radius:20px;
-
-    animation:scroll 1.5s infinite;
-}
-
-@keyframes scroll{
-
-    0%{
-        opacity:0;
-        transform:translateY(0);
+    .menu a:hover{
+      color:#FFD700;
     }
 
-    50%{
-        opacity:1;
+    .menu a::after{
+      content:'';
+      position:absolute;
+      width:0%;
+      height:2px;
+      left:0;
+      bottom:-5px;
+      background:#FFD700;
+      transition:0.3s;
     }
 
-    100%{
-        opacity:0;
-        transform:translateY(18px);
-    }
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-@keyframes goldBorder{
-.content-box{
-
-    width:950px;
-    max-width:90%;
-
-    padding:70px 50px;
-
-    border:5px solid transparent;
-    border-radius:100px;
-
-    text-align:center;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.20),
-    rgba(0,0,0,0.20)) padding-box,
-
-    linear-gradient(
-    270deg,
-    #8f6b12,
-    #d4af37,
-    #ffe08a,
-    #d4af37,
-    #8f6b12
-    ) border-box;
-
-    background-size:400% 400%;
-
-    animation:goldBorder 8s ease infinite;
-
-    backdrop-filter:blur(4px);
-
-    box-shadow:
-    0 0 25px rgba(212,175,55,0.25),
-    0 0 60px rgba(212,175,55,0.15);
-}
-    0%{
-        background-position:0% 50%;
-    }
-
-    50%{
-        background-position:100% 50%;
-    }
-
-    100%{
-        background-position:0% 50%;
-    }
-
-}
-}
-@media(max-width:768px){
-
-    /* NAVBAR */
-    header{
-        height:58px;
-        padding:0 15px;
-    }
-
-    .logo{
-        gap:8px;
-    }
-
-    .logo img{
-        height:28px;
-    }
-
-    .logo h1{
-        font-size:15px;
+    .menu a:hover::after{
+      width:100%;
     }
 
     /* HERO */
+
     .hero{
-        padding:15px;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0 10%;
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url('https://blogger.googleusercontent.com/img/a/AVvXsEhqR8mMmrTmGWu66xJ2WGe80Tj_BmAcVTYsgnbTV5FmUg58W8m0Rh-vqI27tocJariX-kLFA0SbZKrUJW42pvUqxJDBFfKgO8_03PCMnAfhMYHPJmHPyDDGYR09GehM_huB8911sijpb24Wr_f793xYMXgYJHuEpTzQvXSW4x3w43lYUb1Oownxp9wsO-Tm') center/cover;
     }
 
-    /* BOX OVAL */
- .content-box{
+    .hero-content h1{
+      font-size:75px;
+      color:#FFD700;
+      font-weight:900;
+      letter-spacing:4px;
+      margin-bottom:20px;
+    }
+/* ANIMATED TITLE */
 
-    width:100%;
+.animated-title{
 
-    padding:30px 18px;
+  animation:
+  glow 2s ease-in-out infinite alternate,
+  floatText 3s ease-in-out infinite;
 
-    border-radius:70px;
 }
 
-    /* TITLE */
-.content-box h1{
+/* EFEK GLOW */
 
-    font-size:12px;
+@keyframes glow{
 
-    white-space:nowrap;
+  from{
+    text-shadow:
+    0 0 5px rgba(255,215,0,0.3),
+    0 0 10px rgba(255,215,0,0.3);
+  }
 
-    letter-spacing:1px;
+  to{
+    text-shadow:
+    0 0 15px rgba(255,215,0,0.8),
+    0 0 35px rgba(255,215,0,0.6);
+  }
 
-    line-height:1;
 }
 
-    /* TEXT */
-    .content-box p{
+/* EFEK NAIK TURUN */
 
-        font-size:13px;
+@keyframes floatText{
 
-        line-height:1.5;
+  0%{
+    transform:translateY(0px);
+  }
 
-        margin-bottom:20px;
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+    .hero-content p{
+      max-width:750px;
+      margin:auto;
+      line-height:1.8;
+      color:#ddd;
+      font-size:18px;
     }
 
-    /* BUTTON GROUP */
-    .button-group{
-
-        flex-direction:column;
-
-        gap:10px;
-    }
-
-    /* BUTTON */
     .btn{
-
-        width:100%;
-
-        min-width:100%;
-
-        padding:10px 15px;
-
-        font-size:13px;
-
-        border-width:2px;
-
-        border-radius:40px;
+      display:inline-block;
+      margin-top:35px;
+      padding:15px 35px;
+      border-radius:50px;
+      background:#FFD700;
+      color:black;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s;
     }
 
-    .btn i{
-        font-size:14px;
+    .btn:hover{
+      background:white;
+      transform:translateY(-3px);
     }
 
-    /* SCROLL */
-    .scroll{
+    /* SECTION */
 
-        width:24px;
-        height:42px;
-
-        bottom:60px;
+    section{
+      padding:100px 8%;
     }
 
-    .scroll::before{
-
-        width:5px;
-        height:10px;
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
     }
 
-    /* COPYRIGHT */
-    .copyright{
-
-        font-size:9px;
-
-        bottom:10px;
-
-        letter-spacing:1px;
-
-        padding:0 10px;
+    .section-title h2{
+      font-size:45px;
+      color:#FFD700;
+      margin-bottom:10px;
     }
 
-}
-/* =========================
-   MOBILE VERSION
-========================= */
-
-@media(max-width:768px){
-
-    /* NAVBAR */
-    header{
-        height:65px;
-        padding:0 18px;
+    .section-title p{
+      color:#bbb;
     }
 
-    .logo{
-        gap:10px;
+    /* PRODUCT */
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
     }
 
-    .logo img{
-        height:34px;
+    .product-card{
+      background:#111;
+      border-radius:20px;
+      overflow:hidden;
+      border:1px solid rgba(255,215,0,0.15);
+      transition:0.4s;
     }
 
-    .logo h1{
-        font-size:18px;
+    .product-card:hover{
+      transform:translateY(-10px);
+      border-color:#FFD700;
+      box-shadow:0 0 25px rgba(255,215,0,0.2);
     }
 
-    /* HERO */
-    .hero{
-        padding:20px;
+    .product-card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
     }
 
-    /* BOX */
-    .content-box{
-
-        width:95%;
-
-        padding:35px 20px;
-
-        border-radius:45px;
+    .product-info{
+      padding:25px;
     }
 
-    /* TITLE */
-    .content-box h1{
+    .product-info h3{
+      color:#FFD700;
+      margin-bottom:10px;
+    }
 
+    .product-info p{
+      color:#ccc;
+      line-height:1.7;
+      margin-bottom:20px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      text-align:center;
+    }
+
+    .social-buttons{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+      margin-top:40px;
+    }
+
+    .social-buttons a{
+      text-decoration:none;
+      padding:15px 35px;
+      background:#FFD700;
+      color:black;
+      border-radius:50px;
+      font-weight:700;
+      transition:0.3s;
+    }
+
+    .social-buttons a:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:black;
+      color:#777;
+      border-top:1px solid rgba(255,215,0,0.1);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero-content h1{
         font-size:42px;
+      }
 
-        line-height:1.1;
-
-        margin-bottom:20px;
-    }
-
-    /* TEXT */
-    .content-box p{
-
-        font-size:16px;
-
-        line-height:1.5;
-
-        margin-bottom:25px;
-    }
-
-    /* BUTTON */
-    .button-group{
-
-        flex-direction:column;
-
-        gap:12px;
-    }
-
-    .btn{
-
-        width:100%;
-
-        min-width:100%;
-
-        padding:13px 18px;
-
+      .hero-content p{
         font-size:15px;
+      }
 
-        border-width:2px;
     }
+/* BACKGROUND PRODUCT SECTION */
 
-    .btn i{
-        font-size:16px;
-    }
+.product-section{
 
-    /* SCROLL */
-    .scroll{
+  position:relative;
 
-        width:28px;
-        height:48px;
+  background:
+  linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.92)),
+  url('https://blogger.googleusercontent.com/img/a/AVvXsEhqR8mMmrTmGWu66xJ2WGe80Tj_BmAcVTYsgnbTV5FmUg58W8m0Rh-vqI27tocJariX-kLFA0SbZKrUJW42pvUqxJDBFfKgO8_03PCMnAfhMYHPJmHPyDDGYR09GehM_huB8911sijpb24Wr_f793xYMXgYJHuEpTzQvXSW4x3w43lYUb1Oownxp9wsO-Tm');
 
-        bottom:70px;
-    }
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 
-    /* COPYRIGHT */
-    .copyright{
-
-        font-size:11px;
-
-        bottom:15px;
-
-        padding:0 10px;
-    }
-
+  overflow:hidden;
 }
-</style>
-</head>
 
+  </style>
+</head>
 <body>
 
-<!-- NAVBAR -->
+  <!-- NAVBAR -->
 
-<header>
+  <nav>
 
-    <div class="logo">
-<a href="https://instagram.com/warriorfirm.id"
-target="_blank"
-class="logo">
-        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjrJn9O2g2Sa0UYurYdQtriilhDkbfGuDm5KQ25-rmkLHATYV1fpgsMQVTG6cyWz62T_x3JesVBQSdSmu-DVq8tgoFUOL5CZzj_tf_hY2ripk4QiAh15hKfejzqNpW-7fkskEJoi2-78ken01AKKnAY4slHQwSIOjuVpQt_zGQkg0owBUEEzGwI2G4bMbfX" alt="WarriorFirm Logo">
-    <h1>WARRIOR<span>FIRM</span></h1>
+<a href="https://instagram.com/warriorfirm.id" class="logo" target="_blank">
+
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjOL9fdRr4PE4DPhFVuCqHU-eoGYKvA0T4ga3Weq47yo8PrmW5A69ZD5Zrz32o5TviFOBwOIULrFlN0sqroSzZr4OKWz4oHOzdAGWSfLkstpxlzoemVxmt0inBCgdLFNosRDgrxsgiixoJ54_JMJ6b95T5TNNc1yJ5tPDSAz3Bx_oSC6H-mr9YAAuo8skIz" alt="logo">
+
+  <span>WARRIORFIRM.ID</span>
+
 </a>
+</div>
+
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#artikel">Artikel</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- HOME -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+<h1 class="animated-title">
+  WARRIORFIRM.ID
+</h1>
+
+      <p>
+        Local brand dengan nuansa casual football,
+        elegant, dan modern. Menyediakan T-Shirt,
+        Hoodie, Crewneck, dan Cagoule dengan style premium.
+      </p>
+
+      <a href="#artikel" class="btn">
+        Explore Product
+      </a>
 
     </div>
 
-</header>
+  </section>
+<hr>
+  <!-- PRODUCT / ARTIKEL -->
 
-<!-- HERO -->
+<section id="artikel" class="product-section">
 
-<section class="hero">
+  <div class="section-title">
 
-    <div class="content-box">
+    <h2>OUR PRODUCT</h2>
 
-        <h1>WARRIORFIRM.ID</h1>
+    <p>
+      Collection by warriorfirm.id
+    </p>
+
+  </div>
+
+  <div class="product-grid">
+
+    <!-- PRODUCT 1 -->
+
+    <div class="product-card">
+
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg7P_yGzO_mtq4awcVSGVnCxoQez4slrIVBUsUjREiT7lGjE0XkjBrNDd55GQcc1vMhvF0p4FD9EaZJBxMVUyFTN6rJSmnqYukSxvQhJZEtnmw73saeP6fGhrsF2XwWnnq3D7abAlhjezti3jSBieLbE9ac8ZxaUFDFhWhFVINXfChbTVnve1899LXKxVOg">
+
+      <div class="product-info">
+
+        <h3>Warrior T-Shirt</h3>
 
         <p>
-            Support Your Local Brand<br>
-            Tshirt, Hoodie, Crewneck & Cagoule
+          Premium oversized t-shirt dengan desain casual luxury streetwear.
         </p>
 
-        <div class="button-group">
+        <a href="https://wa.me/6281936812532" class="btn">
+          Order Now
+        </a>
 
-            <a href="https://facebook.com/hendrad.moko.99"
-            target="_blank"
-            class="btn">
-
-            <i class="fa-brands fa-facebook-f"></i>
-            FB OWNER
-
-            </a>
-
-            <a href="https://instagram.com/warriorfirm.id"
-            target="_blank"
-            class="btn">
-
-            <i class="fa-brands fa-instagram"></i>
-            INSTAGRAM
-
-            </a>
-
-            <a href="https://wa.me/6281936812532"
-            target="_blank"
-            class="btn">
-
-            <i class="fa-brands fa-whatsapp"></i>
-            WHATSAPP
-
-            </a>
-
-        </div>
+      </div>
 
     </div>
 
-    <div class="scroll"></div>
+    <!-- PRODUCT 2 -->
+
+    <div class="product-card">
+
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhdcwYIXPLoIs5FaO3_bXGDmGAeGbWFzMH37p6LOucDJlrvcDyXaOiDrnVUX3Nr5V18bHzOE3EuaVSSAjHes3eeXMfHy2iRCH3r6ePrVFh8e4fG-SpFsVQV0l1lYFvtEeMzivE_AexzyLJL0Mhn5huIdbfffWkJrs_2SoSG09rUI0eiLV4Cph2E_cp13rMX">
+
+      <div class="product-info">
+
+        <h3>Warrior Hoodie</h3>
+
+        <p>
+          Hoodie premium black edition dengan style clean dan elegant.
+        </p>
+
+        <a href="https://wa.me/6281936812532" class="btn">
+          Order Now
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCT 3 -->
+
+    <div class="product-card">
+
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgUk_TVbnY1LusOQLzIwelJRD-3lc-IIBzJTtNPH4LZiZj8A00JdwLKX1RH3IvEdyVzNGGNY95Sp55_njYUGgJk3ZIKY24XDNnQHVMmQGA3ucWIuRSKWyodREAK73B-4R5oxEbKTxjyGJLWzuALEl-w5-L1kan3LiOopQACdynMp1GyxElegMe1CNx4rhVV">
+
+      <div class="product-info">
+
+        <h3>Warrior Crewneck</h3>
+
+        <p>
+          Crewneck casual modern dengan kombinasi warna black & gold.
+        </p>
+
+        <a href="https://wa.me/6281936812532" class="btn">
+          Order Now
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCT 4 -->
+
+    <div class="product-card">
+
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhPXENQQhBAlCrDTqUTfmKcl2j_OC3R5eof1mkcTQk0pzBjWP-9OKf-M01aNKssKppmxhg-mRFGlOrqTCRpkxD6_78-BeDZbRz0Jkg40p5bgZAaMo_ZIYpAO9mhtRCkgdkBrMQWOqJoeXuxJmfcn3WHRw3-02zOgQRqAyb3JyjF4TglsbVlZAJENddeBBUR">
+
+      <div class="product-info">
+
+        <h3>Warrior Cagoule</h3>
+
+        <p>
+          Cagoule outerwear dengan tampilan urban dan luxury street style.
+        </p>
+
+        <a href="https://wa.me/6281936812532" class="btn">
+          Order Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
-<footer class="copyright">
+<hr>
 
-    © 2026 WARRIORFIRM.ID — All Rights Reserved
+  <!-- CONTACT -->
 
-</footer>
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+
+      <h2>CONTACT US</h2>
+
+      <p>
+        Connect with warriorfirm.id
+      </p>
+
+    </div>
+
+    <div class="social-buttons">
+
+      <a href="https://wa.me/6281936812532" target="_blank">
+        WhatsApp
+      </a>
+
+      <a href="https://instagram.com/warriorfirm.id" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://facebook.com/hendrad.moko.99" target="_blank">
+        Facebook
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 warriorfirm.id — All Rights Reserved
+  </footer>
+
 </body>
 </html>
