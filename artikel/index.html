@@ -458,9 +458,422 @@
     </div>
 
   </div>
+  <hr>
+
+ <section class="contact-comingsoon">
+
+    <!-- PARTICLE -->
+    <div class="particles"></div>
+
+    <!-- LOGO KIRI -->
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjOL9fdRr4PE4DPhFVuCqHU-eoGYKvA0T4ga3Weq47yo8PrmW5A69ZD5Zrz32o5TviFOBwOIULrFlN0sqroSzZr4OKWz4oHOzdAGWSfLkstpxlzoemVxmt0inBCgdLFNosRDgrxsgiixoJ54_JMJ6b95T5TNNc1yJ5tPDSAz3Bx_oSC6H-mr9YAAuo8skIz" class="logo-left">
+
+    <!-- LOGO KANAN -->
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjOL9fdRr4PE4DPhFVuCqHU-eoGYKvA0T4ga3Weq47yo8PrmW5A69ZD5Zrz32o5TviFOBwOIULrFlN0sqroSzZr4OKWz4oHOzdAGWSfLkstpxlzoemVxmt0inBCgdLFNosRDgrxsgiixoJ54_JMJ6b95T5TNNc1yJ5tPDSAz3Bx_oSC6H-mr9YAAuo8skIz" class="logo-right">
+
+    <!-- BOX -->
+    <div class="contact-box">
+
+        <small>WARRIORFIRM</small>
+
+        <h1>CONTACT<br>US</h1>
+
+        <div class="line"></div>
+
+        <p>
+            Connect with warriorfirm.id <br>
+            Follow our social media below.
+        </p>
+
+        <!-- SOCIAL -->
+        <div class="socials">
+
+            <!-- WHATSAPP -->
+            <a href="https://warriorfirm.my.id/contact/" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="https://instagram.com/warriorfirm.id" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+            <a href="https://facebook.com/warriorfirm.id" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
- <!-- FOOTER -->
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+/* SECTION */
+.contact-comingsoon{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
+    url('https://blogger.googleusercontent.com/img/a/AVvXsEhqR8mMmrTmGWu66xJ2WGe80Tj_BmAcVTYsgnbTV5FmUg58W8m0Rh-vqI27tocJariX-kLFA0SbZKrUJW42pvUqxJDBFfKgO8_03PCMnAfhMYHPJmHPyDDGYR09GehM_huB8911sijpb24Wr_f793xYMXgYJHuEpTzQvXSW4x3w43lYUb1Oownxp9wsO-Tm');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOX */
+.contact-box{
+    position: relative;
+    width: 700px;
+    padding: 70px;
+    border-radius: 35px;
+    text-align: center;
+
+    background: rgba(10,10,10,0.55);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,215,0,0.2);
+
+    box-shadow:
+    0 0 30px rgba(255,215,0,0.08),
+    inset 0 0 20px rgba(255,215,0,0.03);
+
+    z-index: 5;
+}
+
+/* MINI TEXT */
+.contact-box small{
+    color: #d4af37;
+    letter-spacing: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* TITLE */
+.contact-box h1{
+    margin-top: 15px;
+    font-size: 95px;
+    line-height: 90px;
+    font-weight: 900;
+    color: #f5d76e;
+
+    text-shadow:
+    0 0 10px rgba(255,215,0,.3),
+    0 0 25px rgba(255,170,0,.2);
+}
+
+/* LINE */
+.line{
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, gold, transparent);
+    margin: 30px auto;
+}
+
+/* TEXT */
+.contact-box p{
+    color: #cfcfcf;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+/* SOCIAL */
+.socials{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* BUTTON */
+.socials a{
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: #000;
+    font-size: 28px;
+
+    background: linear-gradient(145deg,#ffd700,#ffb300);
+
+    box-shadow:
+    0 0 20px rgba(255,215,0,.4);
+
+    transition: .35s;
+}
+
+/* HOVER */
+.socials a:hover{
+    transform: translateY(-8px) scale(1.08);
+
+    box-shadow:
+    0 0 35px rgba(255,170,0,.9),
+    0 0 60px rgba(255,120,0,.5);
+}
+
+/* PARTICLES */
+.particles{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.particles::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+
+    background-image:
+    radial-gradient(#ffb300 1px, transparent 1px);
+
+    background-size: 40px 40px;
+
+    opacity: .25;
+
+    animation: moveParticles 20s linear infinite;
+}
+
+/* PARTICLE MOVE */
+@keyframes moveParticles{
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+/* LOGO */
+.logo-left{
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 240px;
+    opacity: .85;
+}
+
+.logo-right{
+    position: absolute;
+    right: 0;
+    top: 120px;
+    width: 260px;
+    opacity: .85;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .contact-box{
+        width: 90%;
+        padding: 50px 30px;
+    }
+
+    .contact-box h1{
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .logo-left,
+    .logo-right{
+        width: 130px;
+    }
+
+    .socials a{
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+}
+/* MOBILE */
+@media(max-width:768px){
+
+    .contact-box{
+        width: 88%;
+        padding: 45px 20px;
+    }
+
+    .contact-box h1{
+        font-size: 42px;
+        line-height: 58px;
+    }
+
+    .contact-box p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .contact-box small{
+        letter-spacing: 6px;
+        font-size: 11px;
+    }
+
+    .socials{
+        gap: 18px;
+    }
+
+    .socials a{
+        width: 58px;
+        height: 58px;
+        font-size: 22px;
+    }
+
+    .logo-left,
+    .logo-right{
+        width: 90px;
+        opacity: .5;
+    }
+
+}
+/* RESET */
+.navbar *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    height: 90px;
+
+    background: #000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+
+    border-bottom: 1px solid rgba(255,215,0,.15);
+
+    position: relative;
+    z-index: 999;
+}
+
+/* LEFT */
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+/* BRAND */
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    text-decoration: none !important;
+}
+
+/* LOGO */
+.brand img{
+    width: 60px;
+    display: block;
+}
+
+/* BRAND TEXT */
+.brand span{
+    color: #ffd700;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    text-decoration: none !important;
+}
+
+/* RIGHT MENU */
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* MENU BUTTON */
+.nav-right a{
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: .3s;
+
+    border: 1px solid transparent;
+}
+
+/* HOVER */
+.nav-right a:hover{
+
+    background: rgba(255,215,0,.12);
+
+    color: #ffd700;
+
+    border: 1px solid rgba(255,215,0,.35);
+
+    box-shadow:
+    0 0 15px rgba(255,215,0,.2);
+
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .navbar{
+        padding: 0 15px;
+        height: 80px;
+    }
+
+    .brand img{
+        width: 40px;
+    }
+
+    .brand span{
+        font-size: 20px;
+    }
+
+    .nav-right{
+        gap: 5px;
+    }
+
+    .nav-right a{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+}
+</style>
+
+  </section>
+
+  <!-- FOOTER -->
 
   <footer>
     © 2026 warriorfirm — All Rights Reserved
@@ -468,4 +881,3 @@
 
 </body>
 </html>
-
