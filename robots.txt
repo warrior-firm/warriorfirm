@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://warriorfirm.my.id/sitemap.xml
